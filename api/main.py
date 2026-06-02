@@ -134,7 +134,7 @@ def sharpen_strong(img: np.ndarray, strength: float) -> np.ndarray:
     return sharpened
 
 
-@app.get("/")
+@app.get("/health")
 def health():
     return {"status": "ok", "service": "StampCut Sharpen API"}
 
